@@ -1,4 +1,4 @@
-package ru.fintech.qa.homework.utils.jdbc;
+package ru.fintech.qa.homework.utils.db.jdbc;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

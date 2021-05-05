@@ -5,8 +5,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.fintech.qa.homework.utils.BeforeUtils;
-import ru.fintech.qa.homework.utils.jdbc.JdbcClient;
-import ru.fintech.qa.homework.utils.jdbc.JdbcDbService;
+import ru.fintech.qa.homework.utils.db.jdbc.JdbcClient;
+import ru.fintech.qa.homework.utils.db.jdbc.JdbcDbService;
 
 import java.sql.Connection;
 
