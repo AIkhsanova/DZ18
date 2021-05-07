@@ -11,6 +11,8 @@ import ru.fintech.qa.homework.utils.db.jdbc.JdbcDbService;
 import java.sql.Connection;
 
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class JdbcTest {
@@ -46,10 +48,10 @@ public class JdbcTest {
 
     @Test
     public void animalId10Test() {
-        Random random = new Random();
-        int value = random.nextInt(10 - 1 + 1) + 1;
-        Assertions.assertEquals(0, new JdbcDbService()
-                .executeUpdate("insert into animal(id) values (" + value + ")", connection));
+        List<Integer> values = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        values.forEach(value -> Assertions.assertEquals(0, new JdbcDbService()
+                .executeUpdate("insert into animal(id) values (" + value + ")", connection)));
+
     }
 
     @Test
